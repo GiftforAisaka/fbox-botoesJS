@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <title>Teste dos Botões</title>
+</head>
+<body>
+    <header> <!--Pai-->
+        <h1>Testando Botões</h1> <!--Filho 1-->
+        <nav class="menu"> <!--Filho 2-->
+            <a href="inicio.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Vamos clicar nos Botões?</h2>
+        <div class="conteudo"> <!--Pai-->
+            <div class="sobre-proj"> <!--Filho 1-->
+                <h3>Breve explicação</h3>
+                <p>Cada um dos botões abaixo executará uma função diferente, esse projeto serve para testar algumas
+                    funções em JS</p>
+                <p>Esse projeto também serve para testar alguns conceitos de flexbox e organização de conteúdo</p>
+               <img class="image" src="strawberry.png" alt="Ilustração de um morango">
+            </div>
+            <div class="botoes-proj"> <!--Filho 2-->
+                <h3>Botões</h3>
+                <button type="button" id="botao-alert">Clique aqui e exiba uma mensagem</button>
+                <button type="button" id="botao-prompt">Clique aqui e responda uma pergunta</button>
+                <button type="button" class="botoes-num" data-mensagem="Esse botão é o número 1!">Qual número desse botão?</button>
+                <button type="button" class="botoes-num" data-mensagem="Esse botão é o número 2!">Qual número desse botão?</button>
+                <button type="button" class="botoes-num" data-mensagem="Esse botão é o número 3!">Qual número desse botão?</button>
+                <button type="button" class="botoes-num" data-mensagem="Esse botão é o número 4!">Qual número desse botão?</button>
+                <button type="button" class="botoes-num" data-mensagem="Esse botão é o número 5!">Qual número desse botão?</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><strong>Projeto criado por Thuanne</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

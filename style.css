@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo geral da seleção */
+::selection {
+    background-color: #f2537b;
+    /* Cor de fundo da seleção */
+    color: #ffffff;
+    /* Cor do texto selecionado */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #fffaf3; /* creme */
+    color: #4a2b35;            /* marrom-rosado para o texto */
+}
+   
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 900px;
+    /*a largura máxima da faixa (algo entre 900px e 1100px).*/
+    margin: 0 auto;
+    /*o auto nas laterais divide a sobra igualmente e centraliza*/
+    padding: 10px;
+    /* respiro interno, para no celular o texto não colar na borda. */
+}
+
+header {
+    background-color: #ffc2d1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 4px solid #8fbf7f; /* a "folhinha" do morango */
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.menu a {
+    background-color: #ffe3ea;
+    border-radius: 12px;
+    padding: 6px;
+    text-decoration: none;
+    color: #a3123f;
+}
+.menu a:hover{
+    background-color: #a3123f;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 30px;
+    color: #a3123f;
+    font-family: "Borel", sans-serif;
+    margin: 0;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: "Borel", sans-serif;
+    color: #a3123f;
+    font-size: 30px;
+}
+
+.conteudo {
+    display: flex;
+    gap: 10px;
+}
+
+.conteudo h3 {
+    text-align: center;
+}
+
+.sobre-proj {
+    background-color: #ffe3ea;
+    padding: 16px;
+    border-radius: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes-proj {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc2d1;
+    padding: 16px;
+    border-radius: 20px;
+    flex: 1;
+    gap: 10px;
+    align-items: center;
+}
+
+.botoes-proj button {
+    width: 100%;
+    max-width: 280px;
+    background-color: #a3123f;
+    color: #ffffff;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font: inherit;
+}
+
+.botoes-proj button:hover {
+    background-color: #7a0d2f;
+    color: #ffffff;
+}
+.image {
+    width: 70px; /* define o tamanho da imagem*/
+    max-width: 100%; /* garante que a imagem nunca fique maior que a caixa, importante para o celular*/
+    height: auto; /*mantém a proporção, sem achatar nem esticar */
+    display: block;
+    margin: auto auto 0;/*  A mesma lógica do main. O auto divide a sobra dos lados. */
+    
+}
+
+footer {
+    text-align: center;
+    background-color: #ffc2d1;
+    border-top: 4px solid #8fbf7f; /* a "folhinha" do morango */
+}
